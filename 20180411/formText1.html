@@ -7,11 +7,16 @@
 </head>
 <body>
 <section>
-<form action="http://hive.dju.ac.kr/~drkdhong/html5/formText1.jsp"method="post">
+<form action="http://jsp.dju.ac.kr/~kdhongx/ex/formText1.jsp"method="post">
 <fieldset>
 <legend>사용자정보</legend>
-  <label for="namex">아이디</label></br>
+<label for="namex">아이디</label>
+<input id="namex" type="text" name="namex" size="20" maxlength="20" placeholder="ID 입력 하세요"/>
+<input type="button"value="문자중복"/><br/>
 <label for="passx">패스워드</label>
+<input id="passx" type="password" name="passx"/><br/>
+<input type="submit" value="서버전송"/>
+<input type="reset" value="취소"/>
 </fieldset>
 </form>
 </section>
