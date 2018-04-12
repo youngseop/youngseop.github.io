@@ -3,10 +3,16 @@
 <head>
  <meta charset="utf-8"/>
  <meta name="viewport" content="width=device-width, initial-sace=1"/>
-<style> table, tr, th, td
-{
-  border: 1px solid black; border-collapse: collapse;
-}
+<style> table, th, tr,td{
+  border:2px gray solid; 
+  border-collapse:collapse;}
+  .subject1{background-color:#1BF4E5;}
+  .subject2{background-color:#09BDB1;}
+  .subject3{background-color:#0000FF;}
+  .subject4{background-color:lightblue;}
+  .subject5{background-color:red;}
+  .subject6{background-color:yellow;}
+  </style><!-- border-collapse:collase 단선으로, 반대는 separate -->
 </style>
 <title> 시간표 </title>
 </head>
@@ -22,19 +28,19 @@
  <tr>
  <td>0교시 08:00</td><td></td><td></td><td></td><td></td><td>　　　　　　　　　　　</td></tr>
  <tr>
- <td>1교시 09:00</td><td></td></td><td rowspan ="2">오토마타와 응용(황선명) </td><td rowspan="2">자료구조및실습(강석훈)<td></td><td></td></tr>
+ <td>1교시 09:00</td><td></td></td><td class ="subject5" rowspan="2">오토마타와 응용(황선명) </td><td class ="subject1" rowspan="2">자료구조및실습(강석훈)<td></td><td></td></tr>
  <tr>
- <td>2교시 10:00</td><td></td><td></td><td></td></tr>
+ <td>2교시 10:00</td><td></td><td class ="subject5">오토마타와 응용(황선명)</td><td></td></tr>
  <tr>
- <td>3교시 11:00</td><td rowspan="2">디지털논리회로(김용수)</td><td rowspan="2">자료구조및실습(강석훈)</td><td></td><td rowspan="2">인터넷프로그래밍(우훈식)</td><td></td></tr>
+ <td>3교시 11:00</td><td class ="subject2" rowspan="2">디지털논리회로(김용수)</td><td class ="subject1" rowspan="2">자료구조및실습(강석훈)</td><td></td><td class ="subject3" rowspan="2">인터넷프로그래밍(우훈식)</td><td></td></tr>
  <tr>
- <td>4교시 12:00</td><td rowspan="2">인터넷프로그래밍(우훈식)</td><td></td></tr>
+ <td>4교시 12:00</td><td class ="subject3" rowspan="2">인터넷프로그래밍(우훈식)</td><td></td></tr>
  <tr>
- <td>5교시 13:00</td><td></td><td>디지털논리회로(김용수)</td><td></td><td></td></tr>
+ <td>5교시 13:00</td><td></td><td class ="subject2">디지털논리회로(김용수)</td><td></td><td></td></tr>
  <tr>
- <td>6교시 14:00</td><td rowspan="4">C++ 프로그래밍(정일홍)</td><td></td><td></td><td></td><td></td></tr>
+ <td>6교시 14:00</td><td class ="subject4" rowspan="4">C++ 프로그래밍(정일홍)</td><td></td><td></td><td></td><td></td></tr>
  <tr>
- <td>7교시 15:00</td><td></td><td rowspan="3">한국대외관계서(김갑동)</td><td></td><td></td></tr>
+ <td>7교시 15:00</td><td></td><td class="subject6" rowspan="3">한국대외관계서(김갑동)</td><td></td><td></td></tr>
  <tr>
  <td>8교시 16:00</td><td></td><td></td><td></td>
  </tr>
