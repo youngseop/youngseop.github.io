@@ -1,0 +1,52 @@
+<!doctype html> <!-- /src/funcArgTest.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+<meta name="viewprot" content="width=device=width, initial=scale=1"/>
+<style>
+body {font-family: Verdana, sans-serif; font-size:0.8em;}
+header, nav, section, article, footer
+{border:1px solid gray; margin:5px; padding:8px;}
+section#displayArea{height:210px;}
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+a {text-decoration:none;}
+#id_form{width:100px; height:14px; color:red;}
+</style>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+<header>
+<h2>실습 대환영</h2>
+</header>
+<nav>
+<ul>
+<li>
+<a href="http://hive.dju.ac.kr">실습서버</a>
+</li>
+</ul>
+</nav>
+<section><h4>가변 인자 함수 실습</h4>
+<script>
+function sumy(){
+var result=0;
+for(var i = 0; i < arguments.length; i++){
+result = result + arguments[i];
+}
+return result;
+}
+function printValue(){
+for(var i in arguments)
+document.write(arguments[i],"<br/>");
+}
+var value = sumy(10,20,30);
+printValue(value);
+printValue("a",10,15,"v");
+</script></section>
+</script>
+</section>
+<footer>
+<p>&copy; 20XX Made by Korea. All rights reserved.</p>
+</footer>
+</body>
+</html>
