@@ -1,0 +1,41 @@
+<!doctype html> <!-- getElementsByName.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+<meta name="viewprot" content="width=device=width, initial=scale=1"/>
+<style>
+body {font-family: Verdana, sans-serif; font-size:0.8em;}
+header, nav, section, article, footer
+{border:1px solid gray; margin:5px; padding:8px;}
+section#displayArea{height:210px;}
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+a {text-decoration:none;}
+#id_form{width:100px; height:14px; color:red;}
+</style>
+<script>
+function fnGetElementssByName(){
+var accessTag=document.getElementsByName("input_name1");
+console.log(accessTag.tagName);
+accessTag.setAttribute("value","getElementsByName실행!");
+}
+</script>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+<header>
+<h2>HTML DOM 실습 환영합니다</h2>
+</header>
+<section id ="login">
+<h4>자바 스크립트 실행</h4>
+<form id="form_id1" name="form_name1">
+<input id="input_id1"type="text" name="input_name1" size="30"/>
+<input id="button_id1"type="button" name="user_id" value="입력"/><br/>
+빈칸에 검색어를 넣고 입력해 주세요
+</form>
+<form>
+<input type="button" onclick="fnGetElementsByName();" value="변경실행"/>
+</form>
+</section>
+</body>
+</html>
